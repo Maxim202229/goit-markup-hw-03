@@ -32,6 +32,8 @@ ul{
 }
 img{
     display: block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .list {
     text-decoration: none;
@@ -79,6 +81,8 @@ align-items: center;
 } 
 .main-nav{
     display: flex;
+    
+    
 }
 .nav-header{
     align-items: center;
@@ -121,6 +125,9 @@ align-items: center;
     color: var(--logo-accent-color);
 }
 .hero{
+    width: 670px;
+    margin-left: auto;
+    margin-right: auto;
     color:var(--hero-text-color);
     text-transform: uppercase;
 
@@ -130,6 +137,7 @@ align-items: center;
     letter-spacing: 0.06em;
 }
 .hero-title{
+    
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -180,8 +188,12 @@ align-items: center;
     line-height: 1.14;
 
 }
+.job-list{
+    margin-left: 30px;
+    width: 270px;
+}
 .list-paragraf{
-   text-align: center;
+   
     color: var(--secondary-main-color);
 
     font-size: 14px;
@@ -192,16 +204,45 @@ align-items: center;
     background-color: var(--background-our-team);
 }
 .work{
+padding-top: 94px;
+text-align: center;
+padding-bottom: 50px;
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 }
+.work-list{
+    display: flex;
+    
+}
+.list{
+    padding-bottom: 94px;
+
+    margin-right: 30px;
+}
+.our-work:nth-child(3n){
+    margin-left: 0;
+}
+.work-team{
+    display: flex;
+    
+
+}
+.our-team-list{
+   
+    margin-left: 30px;
+    text-align: center;
+}
 .team-titel{
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.12;
 }
 .team-profession{
+   
+    margin-top: 10px;
     color: var(--secondary-main-color);
 
     font-size: 16px;
@@ -213,6 +254,9 @@ line-height: 1.16;
     
 }
 .address-logo{
+    display: flex;
+padding-top: 60px;
+padding-bottom: 20px;
     color: var(--hero-text-color);
   font-weight: 700;
   font-size: 26px;
@@ -235,6 +279,8 @@ line-height: 1.16;
     color: var(--logo-accent-color);
 }
 .address-contact{
+margin-bottom: 9px;
+
     color: var(--address-text-color);
     font-family: var(--primery-text-style);
     font-style: normal;
