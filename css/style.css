@@ -10,7 +10,7 @@
    --hero-text-color:#ffffff;
    --address-text-color:rgba(255, 255, 255, 0.6);
    --background-our-team:#F5F4FA;
-   
+   --box-shadow-border: rgba(0, 0, 0, 0.14);
 }
 
 body{
@@ -57,11 +57,13 @@ align-items: center;
 
 
 .heder-logo {
-    
-
+    display: inline-block;
+padding-top:25px ;
+padding-bottom:25px ;
     margin-right: 93px;
    font-family: var(--secontary-text-style); 
    color: var(--logo-heder-color);
+   
 
    font-weight: 700;
    font-size: 26px;
@@ -73,30 +75,30 @@ align-items: center;
     color: var(--logo-accent-color);
 }
 
-.nav-list:not(:last-child){
-
+.nav-list{
+    
     margin-right: 50px;
     align-items: center;
-    
-    
+    display: inline-block;
+    display: flex;
 } 
 
 .main-nav{
     display: flex;
     align-items: center;
-   
+    
 }
 .nav-header{
    
     padding-left: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
     align-items: center;
     display: flex;
    
 }
 
 .nav-link{
+    padding-top: 32px;
+    padding-bottom:32px ;
     color: var(--first-main-color);
     font-family: var(--primery-text-style);
 
@@ -108,6 +110,9 @@ align-items: center;
     color: var(--logo-accent-color);
 }
 .contact{
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--secondary-main-color);
 
     font-weight: 500;
@@ -151,6 +156,8 @@ align-items: center;
     background-color: var(--background-hero-color);
 }
 .button-hero{
+    text-align: center;
+    border-radius: 4px;
     min-width: 216px;
     margin-top: 30px;
     padding: 10px 32px;
@@ -267,11 +274,14 @@ margin-right: 30px;
 }
 
 .our-team-list{
-   
+    background-color: var(--hero-text-color);
+    box-shadow: 0px 3px var(--box-shadow-border);
+border-radius: 4px;
  
     text-align: center;
 }
 .team-titel{
+    
     margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
@@ -287,7 +297,7 @@ margin-right: 30px;
 
 }
 .contact-address{
-    margin-top: 94px;
+    
     padding-top: 60px;
     padding-bottom: 60px;
 } 
@@ -335,6 +345,7 @@ margin-bottom: 9px;
 }
 
 .buttons-item{
+    
     display: flex;
     flex-wrap: wrap;
  
@@ -348,7 +359,9 @@ margin-bottom: 9px;
 }
 
 .button-list{
-    
+    text-align: center;
+    min-width: 73px;
+    border-radius: 4px;  
 margin-left:9px;
 
 
