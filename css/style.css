@@ -11,6 +11,8 @@
    --address-text-color:rgba(255, 255, 255, 0.6);
    --background-our-team:#F5F4FA;
    --box-shadow-border: rgba(0, 0, 0, 0.14);
+   --border-bottom-color: #ECECEC;
+   --list-names-border: #EEEEEE;
 }
 
 body{
@@ -109,7 +111,7 @@ align-items: center;
 
 }
 .contacts{
-    padding-right: 10px;
+   
     margin-left: auto;
 }
 .contacts-list{
@@ -174,10 +176,13 @@ align-items: center;
     clip-path: inset(50%);
     margin: -1px ;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .list-items{
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 118p;
+   gap:30px
  }
 .list-title {
     margin-bottom: 10px;
@@ -207,15 +212,10 @@ flex-wrap: wrap;
     background-color: var(--background-our-team);
    
 }
-.our-work{
-    margin-top: 94px;
-    padding-bottom: 94px;
-  
-}
+
 .work{
   
- padding-top: 94px; 
- padding-bottom: 50px;  
+ margin-bottom: 50px;  
 text-align: center;
 
 
@@ -236,37 +236,38 @@ line-height: 1.16;
 .work-team{
    display: flex;
     }
-.our-team-card{
-   padding-bottom: 94px;}
-.our-team-list:last-child {
+
+.our-team-list:last-child 
+{
     margin-right: 0px;
   }
 .background-team-list{
     background-color: var(--hero-text-color);
 }
 .our-team-list{
-   width: calc((100%-90px) / 4);
-margin-right: 30px;
- text-align: center;
-}
-.background-our-team{
     width: 270px;
     box-shadow: 0px 3px var(--box-shadow-border);
     border-bottom-left-radius:  4px ;
     border-bottom-right-radius: 4px ;
     background-color: var(--hero-text-color);
+   width: calc((100%-90px) / 4);
+margin-right: 30px;
+ text-align: center;
+}
+.background-our-team{
+   
 }
 .team-titel{
    
-    padding-top: 30px;
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.12;
 }
 .team-profession{
    
-    padding-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     color: var(--secondary-main-color);
 
     font-size: 16px;
@@ -285,7 +286,7 @@ margin-right: 30px;
 .address-logo{
     display: flex;
 
-padding-bottom: 20px;
+margin-bottom: 20px;
 font-family: var(--secontary-text-style);
     color: var(--hero-text-color);
   font-weight: 700;
@@ -293,6 +294,13 @@ font-family: var(--secontary-text-style);
   line-height: 1.15;
   letter-spacing: 0.03em;
 
+}
+.addres-contacts-element:last-child{
+    margin-bottom: 0;
+}
+
+.addres-contacts-element{
+    margin-bottom: 9px;
 }
 .address-map{
     color: var(--hero-text-color);
@@ -307,8 +315,6 @@ font-family: var(--secontary-text-style);
     color: var(--logo-accent-color);
 }
 .address-contact{
-margin-bottom: 9px;
-
     color: var(--address-text-color);
     font-family: var(--primery-text-style);
     font-style: normal;
@@ -320,21 +326,22 @@ margin-bottom: 9px;
 .address-contact:focus{
     color: var(--logo-accent-color);
 }
-
+.border{
+    border-bottom: 1px solid var(--border-bottom-color);
+}
 .buttons-item{
-  margin-left: 300px;
     margin-bottom: 30px;
+  margin-left: 300px;
     display: flex;
 }
    .buttons{
-    margin-top: 94px;
-    padding-bottom: 94px;
-   align-items: center;
+   align-items: center;}
+   
+   .buttons-item:last-child{
+margin-left: 8px;
 }
-.buttons-item:first-child{
-margin-left: 0px;
 
-}
+
 .button-list{
 min-width: 73px;
 border-radius: 4px;  
@@ -363,6 +370,13 @@ line-height: 1.6;
 .project-card:nth-last-child(-n+3){
 margin-bottom: 0;
 }
+.list-names{
+    padding: 20px 24px;
+    border:20px 25px;
+    
+    border: 1px solid var(--list-names-border);
+}
+
 .project-card{
  margin-bottom: 30px;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
         <a class="heder-logo list " href="#"><span class="span-logo"> Web</span>Studio</a>
         <ul class="nav-list list nav-container">
             <li class="nav-list-item">
-                <a class="nav-link list current" href="./index.html">Студія</a>
+                <a class="nav-link list " href="./index.html">Студія</a>
             </li>
             <li class="nav-list-item">
-                <a class="nav-link list " href="./portfolio.html">Портфоліо</a>
+                <a class="nav-link list current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav-list-item">
                 <a class="nav-link list " href="./index.html">Контакти</a>
@@ -41,7 +41,7 @@
     </header>
     <main>
         <div class="container">
-        <section class="buttons  ">
+        <section class="buttons section ">
             <h1 class="hidden">Портфоліо</h1>
             <ul class="list buttons-item">
        <li> <button class="button-list" type="button">Усі</button></li>
@@ -54,50 +54,49 @@
         <ul class="projects list  ">
             <li class="project-card ">
            <img src="./images/imgporfolio1.jpg" alt="Технокряк">
-         
-           <h2 class="project-title" >Технокряк</h2>
-           <p class="project-item">Веб-сайт</p>
+            <div class="list-names"><h2 class="project-title" >Технокряк</h2>
+           <p class="project-item">Веб-сайт</p></div>
             </li>
         
             <li class="project-card">
                 <img src="./images/imgportfolio2.jpg" alt="Постер New Orlean vs Golden Star">
-                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                <p class="project-item">Дизайн</p>
+                <div class="list-names"><h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                <p class="project-item">Дизайн</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio3.jpg" alt="Ресторан Seafood">
-                <h2 class="project-title">Ресторан Seafood</h2>
-                <p class="project-item">Додаток</p>
+                <div class="list-names"><h2 class="project-title">Ресторан Seafood</h2>
+                <p class="project-item">Додаток</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio4.jpg" alt="Проєкт Prime">
-                <h2 class="project-title">Проєкт Prime</h2>
-                <p class="project-item">Маркетинг</p>
+                <div class="list-names"><h2 class="project-title">Проєкт Prime</h2>
+                <p class="project-item">Маркетинг</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio5.jpg" alt="Проєкт Boxes">
-                <h2 class="project-title">Проєкт Boxes</h2>
-                <p class="project-item">Додаток</p>
+                <div class="list-names"><h2 class="project-title">Проєкт Boxes</h2>
+                <p class="project-item">Додаток</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio6.jpg" alt="Inspiration has no Borders">
-                <h2 class="project-title">Inspiration has no Borders</h2>
-                <p class="project-item">Веб-сайт</p>
+                <div class="list-names"><h2 class="project-title">Inspiration has no Borders</h2>
+                <p class="project-item">Веб-сайт</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio7.jpg" alt="Видання Limited Edition">
-                <h2 class="project-title">Видання Limited Edition</h2>
+                <div class="list-names"><h2 class="project-title">Видання Limited Edition</h2>
                 <p class="project-item">Дизайн</p>
             </li>
             <li class="project-card">
                 <img src="./images/imgportfolio8.jpg" alt="Проєкт LAB">
-                <h2 class="project-title">Проєкт LAB</h2>
-                <p class="project-item">Маркетинг</p>
+                <div class="list-names"><h2 class="project-title">Проєкт LAB</h2>
+                <p class="project-item">Маркетинг</p></div>
             </li>
             <li class="project-card">
                 <img src="./images/imgporfolio9.jpg" alt="Growing Business">
-                <h2 class="project-title">Growing Business</h2>
-                <p class="project-item">Додаток</p>
+                <div class="list-names"><h2 class="project-title">Growing Business</h2>
+                <p class="project-item">Додаток</p></div>
             </li>
         </ul>
    
@@ -110,14 +109,14 @@
         <a class="address-logo list" href="#"><span class="span-logo ">Web</span>Studio</a>
         <address>
             <ul class="address-contacts list">
-                <li>
+                <li class="addres-contacts-element">
                     <a class="address-map list" href="https://goo.gl/maps/xisv4VeTRYTnxscp7">
                         м. Київ, пр-т Лесі Українки, 26</a>
                 </li>
-                <li>
+                <li  class="addres-contacts-element">
                     <a class="address-contact list" href="mailto:info@devstudio.com">info@devstudio.com</a>  
                 </li>
-                <li>
+                <li  class="addres-contacts-element">
                     <a class="address-contact list" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
